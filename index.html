@@ -107,21 +107,29 @@
                   <span class="d-block designers" data-text="Designer">Designer & </span>
                   <span class="d-block designers" data-text="Editor">Editor</span>
                </h1>
-               <div class="video__area">
-                  <img src="banner/bn-arrow.png" class="vid__arrow" alt="img">
-                  <a href="https://www.youtube.com/watch?v=zFuJgOiUEso&amp;ab_channel=SujithRajendran" class="video__80 video-btn">
-                     <i class="bi bi-play-fill"></i>
-                  </a>
-                  <span class="proces">
-                     Work
-                     Process
-                  </span>
-               </div>
+               <div class="video__area" style="position: relative; display: inline-block; text-align: center;">
+                  <img src="banner/bn-arrow.png" class="vid__arrow" alt="img" style="width: 80px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0;">
+                  
+                  <div class="video-container" onclick="playVideo()" style="display: block; position: relative; width: 560px; height: 315px; background: url('') no-repeat center center; background-size: cover; cursor: pointer;">
+                      <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; color: white; cursor: pointer;">▶</div>
+                  </div>
+          
+                  <span class="proces" style="position: absolute; bottom: 20px; font-size: 18px; color: #fff; font-weight: bold; z-index: 5;">Work Process</span>
+              </div>
+          
+              <script>
+                  function playVideo() {
+                      var container = document.querySelector('.video-container');
+                      container.innerHTML = '<iframe src="https://www.youtube.com/embed/uOr-OIKGcEQ?autoplay=1&si=6QuGZiRXlEJm3mM9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 100%;"></iframe>';
+                      container.style.background = 'none'; // Remove background image
+                  }
+              </script>
+          
             </div>
          </div>
          <div class="col-lg-4">
             <div class="banner__thumb" data-aos="fade-up-right" data-aos-duration="300">
-               <img src="man.png" alt="man-img" style="width: 600px; height: 750px;">
+               <img src="mann.png" alt="man-img" style="width: 600px; height: 850px;">
 
             </div>
          </div>
@@ -191,7 +199,7 @@
                   <div class="row g-4 align-items-lg-start align-items-center">
                      <div class="col-lg-5">
                         <div class="about__onethumb" data-aos="zoom-in" data-aos-duration="500">
-                           <img src="about/man2.jpg" alt="img">
+                           <img src="about/man2.png" alt="img">
                         </div>
                      </div>
                      <div class="col-lg-7">
@@ -259,10 +267,10 @@
                      <div class="col-lg-7">
                         <div class="about__onecontent">
                            <h2>
-                              My Experience
+                            Experience
                            </h2>
                            <p>
-                              VIDEO EDITOR & GRAPHIC DESIGNER   </p>
+                              7 Years ExperienceS   </p>
                            <div class="exprience__box mt-30">
                               <div class="exri__item">
                                  <span class="fz-18 fw-500 base">
@@ -274,7 +282,7 @@
                                        TICK NETWORK (GIRI INITIATIVE)
                                     </h4>
                                     <p class="fz-18 pra d-block">
-                                       SENIOR VIDEO EDITOR & GRAPHIC DESIGNER(Team Leader)
+                                       Team Leader – Graphic Design & Video Editing
 
                                     </p>
                                  </div>
@@ -305,7 +313,7 @@
                   <div class="row g-4 align-items-lg-start align-items-center">
                      <div class="col-lg-5">
                         <div class="about__onethumb">
-                           <img src="about/man2.jpg" alt="img">
+                           <img src="about/man2.png" alt="img">
                         </div>
                      </div>
                      <div class="col-lg-7">
@@ -437,8 +445,7 @@
          </span>
          <h2 class="fw-500" data-aos="fade-down"
          data-aos-duration="2000">
-            Look at my portfolio and give me 
-            your feedback
+           
          </h2>
       </div>
       <div class="row g-4">
@@ -499,7 +506,7 @@
                      <a href="brochure.jpg" class="common__icon imgc">
                         <i class="bi bi-arrow-up-right"></i>
                      </a>
-                     <a href="brochure 1.jpg" class="common__icon imgc">
+                     <a href="brochure 2 (1).jpg" class="common__icon imgc">
                         <i class="bi bi-arrow-up-right"></i>
                      </a>
                    
@@ -568,6 +575,14 @@
                      <a href="flyer.jpeg" class="common__icon imgc">
                         <i class="bi bi-arrow-up-right"></i>
                       </a>
+                      <a href="7.jpg" class="common__icon imgc">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    
+                      <a href="6.jpg" class="common__icon imgc">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    
                     
                       </div>
                   </div>
@@ -583,7 +598,7 @@
                                    Passion
                                  </span>
                                  <h3>
-                                    Videography
+                                    Direction and Script Writing
                                  </h3>
                               </a>
                               
