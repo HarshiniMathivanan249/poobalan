@@ -585,6 +585,8 @@
                     
                     
                       </div>
+
+                      
                   </div>
                   <div class="project__item" data-aos="fade-up"
                   data-aos-duration="2200">
@@ -606,8 +608,81 @@
                                  
                               </div>
                            </div>
+                           
                         </div>
+                        <div class="project__item" data-aos="fade-up" data-aos-duration="2200">
+                           <div class="carousel" style="position: relative; overflow: hidden; width: 100%; height: 315px;">
+                             <div class="carousel-track" style="display: flex; transition: transform 0.5s ease-in-out;">
+                               <!-- First Video -->
+                               <div class="carousel-item" style="min-width: 100%; box-sizing: border-box;">
+                                 <a href="pro6.jpg" class="thumb mb-30 imgc">
+                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/uUupW5qPpGE" frameborder="0" allowfullscreen style="width: 100%; height: 315px;"></iframe>
+                                 </a>
+                               </div>
+                               <!-- Second Video -->
+                               <div class="carousel-item" style="min-width: 100%; box-sizing: border-box;">
+                                 <a href="pro6.jpg" class="thumb mb-30 imgc">
+                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/UvyP4bQ1IDo" frameborder="0" allowfullscreen style="width: 100%; height: 315px;"></iframe>
+                                 </a>
+                               </div>
+                               <!-- Third Video -->
+                               <div class="carousel-item" style="min-width: 100%; box-sizing: border-box;">
+                                 <a href="pro6.jpg" class="thumb mb-30 imgc">
+                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/U74N2F6NWf4" frameborder="0" allowfullscreen style="width: 100%; height: 315px;"></iframe>
+                                 </a>
+                               </div>
+                               <!-- Fourth Video -->
+                               <div class="carousel-item" style="min-width: 100%; box-sizing: border-box;">
+                                 <a href="pro6.jpg" class="thumb mb-30 imgc">
+                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/gM7I1vnDLPo" frameborder="0" allowfullscreen style="width: 100%; height: 315px;"></iframe>
+                                 </a>
+                               </div>
+                             </div>
+                             <!-- Carousel Controls -->
+                             <div class="carousel-controls" style="position: absolute; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%);">
+                               <button class="carousel-button prev" style="background-color: rgba(0, 0, 0, 0.5); border: none; color: white; padding: 5px 10px; cursor: pointer;">◀</button>
+                               <button class="carousel-button next" style="background-color: rgba(0, 0, 0, 0.5); border: none; color: white; padding: 5px 10px; cursor: pointer;">▶</button>
+                             </div>
+                           </div>
+                           <div class="content d-flex align-items-center justify-content-between gap-2">
+                             <a class="left__cont">
+                               <span class="base mb-2 mb-xxl-3 d-block text-uppercase">Creative</span>
+                               <h3>Photography</h3>
+                             </a>
+                             <div class="icon-group d-flex gap-2"></div>
+                           </div>
+                         </div>
+                         
+                         <script>
+                           const track = document.querySelector('.carousel-track');
+                           const items = document.querySelectorAll('.carousel-item');
+                           const prevButton = document.querySelector('.carousel-button.prev');
+                           const nextButton = document.querySelector('.carousel-button.next');
+                         
+                           let currentIndex = 0;
+                         
+                           function updateCarousel() {
+                             const itemWidth = items[0].clientWidth;
+                             track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                           }
+                         
+                           prevButton.addEventListener('click', () => {
+                             currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+                             updateCarousel();
+                           });
+                         
+                           nextButton.addEventListener('click', () => {
+                             currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+                             updateCarousel();
+                           });
+                         
+                           window.addEventListener('resize', updateCarousel);
+                         </script>
+                         
+                        
                </div>
+
+
 
                
                
@@ -627,6 +702,7 @@
    </div>
 </section>
 <!--<< project one >>-->
+
 
 
 <!--<< service >>-->
